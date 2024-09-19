@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+*,*:before,*:after{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:active,
+:hover,
+:focus{
+    outline: 0 !important;
+}
+
+a,
+a:hover {
+    text-decoration : none;
+}
+
+a:hover {
+    color : var(--primary-color);
+}
+
+
+/* B.d. ul,ol have margin of 15 */
+ ul,ol{
+    margin: 0;
+    padding: 0;
+} 
+
+
+:root{
+    --primary-color: #AB2C48;
+    --secondry-color : #43121d;
+    --third-color : #f98169;
+    --white-color : #fff;
+    --black-color : #000;
+    --text-color : #999;
+
+    --primary-font : 'Roboto', "sans-serif";
+    --secondry-font : 'Quicksand', "sans-serif";
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: var(--primary-font);
+    font-size : 100%;
+    font-weight : 400;
+}
+
+/* 
+========================================
+        Custom Scrollbar
+========================================
+*/
+
+
