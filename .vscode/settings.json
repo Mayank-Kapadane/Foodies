@@ -1,5 +1,4 @@
 {
-    "editor.wordWrap": "on",
     // "editor.fontFamily": "Kristem ITC, Lucida Handwriting, French Script MT, Freestyle Script, Bradley Hand ITC, Cascadia Code, Fira Code",
     // "editor.fontFamily": " Bradley Hand ITC, Cascadia Code, Fira Code",
     // "editor.fontFamily": "Fira Code",
@@ -8,19 +7,19 @@
     "breadcrumbs.enabled": true,
     // "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.stickyScroll.enabled": false,
-    // "editor.fontWeight": "600",
+    "editor.fontWeight": "600",
     // "terminal.integrated.fontFamily": "Tahoma,Verdana,Arial,JetBrains Mono, Fira Code,Trebuchet MS",
-    "terminal.integrated.fontSize": 16,
+    // "terminal.integrated.fontSize": 16,
     // "editor.renderWhitespace": "all",
-    "editor.cursorBlinking": "expand",
+    // "editor.cursorBlinking": "expand",
     "diffEditor.wordWrap": "on",
     "files.autoSaveDelay": 1000,
     "workbench.activityBar.iconClickBehavior": "toggle",
-    "workbench.colorTheme": "Default Dark+",
+    "workbench.colorTheme": "React Theme",
     "zenMode.fullScreen": false,
     // "editor.renderLineHighlight": "all",
     "zenMode.showTabs": "multiple",
-    // "editor.lineNumbers": "off",
+    "editor.lineNumbers": "on",
     "workbench.editor.centeredLayoutAutoResize": true,
     "peacock.color": "",
     "peacock.keepBadgeColor": true,
@@ -29,6 +28,160 @@
     "peacock.squigglyBeGone": false,
     "CodeGPT.Autocomplete.suggestionDelay": 500,
     // "editor.formatOnSave": true,
-    "editor.tabSize": 4
-                
+    "editor.tabSize": 4,
+    "powermode.presets": "fireworks",
+
+/*
+    // While copy/paste from vscode to word syntax highlight not shown
+    "editor.copyWithSyntaxHighlighting": false,
+
+    // whitespace changes are not ignored in git diff editor
+    "diffEditor.ignoreTrimWhitespace": false,
+
+    // empty line willl not copied after hitting ctrl+c in empty line
+    // "editor.emptySelectionClipboard": false,
+
+    // after single click on file it will keep open not need to double click to keep open it
+    "workbench.editor.enablePreview": false,
+
+    "editor.multiCursorModifier": "alt",
+
+    // remove trailing whitespace( extra spaces from start and end)
+    "files.trimTrailingWhitespace": true,
+
+    "diffEditor.renderSideBySide": false,
+
+    // In suggesion snippet shows first. then other suggestion such as keywords, etc..
+    "editor.snippetSuggestions": "top",
+
+    // based on file connect tab size and whitesapce size change if true, if false then not change
+    "editor.detectIndentation": false,
+
+    // after saving add new line to the file
+        // make sure this setting is after  "files.trimTrailingWhitespace" otherwise lastly added line will also be trimmed
+    "files.insertFinalNewline": true,
+
+    // When enabled, will trim all new lines after the final new line at the end of the file when saving it.
+    "files.trimFinalNewlines": true,
+
+    // remove tabs from working area
+    // "workbench.editor.showTabs": "none",
+
+    // vs code will not give indentation related guide
+    "editor.guides.indentation": false,
+
+    // after commit you will not see the green lines after add, red lines after delete, blue after modify
+    "scm.diffDecorations": "none",
+
+    // When Hower, after 1500 milisecond something will show
+    "editor.hover.delay": 1500,
+
+    // after hover on function tooltips will show above the function's line
+    // if false then tooltip pop-up will show below the function line
+    "editor.hover.above": true,
+
+    // show function arguments(signature) after hover
+    "editor.hover.enabled": true,
+
+    // if setted to "always" then it shows square on bracket
+    "editor.matchBrackets": "never",
+
+    // if your profile is web devlopment and you have .py file then vs code suggest you to download python extemsion pack that thing
+    "workbench.tips.enabled": false,
+
+    // show a square color preview box
+    "editor.colorDecorators": true,
+
+
+    // visually decorate git related chnages like add,update,delete
+    "git.decorations.enabled": false,
+
+    // Controls which editor is shown at startup, if none are restored from the previous session.
+    "workbench.startupEditor": "none",
+
+    "editor.lightbulb.enabled": "off",
+
+    // after selecting some text not highlight it's other occurancies ( Prevent automatic highlight )
+    "editor.selectionHighlight": false,
+
+    // same as above ( prevent highlight when using cursor we select something and other occurancies also highlight )
+    "editor.occurrencesHighlight": "off",
+
+    // at right side of the window we have scroll bar that shows colors for error(red), warning(yellow)
+    "editor.overviewRulerBorder": false,
+
+    // highlisht that line in which cursor is present
+    "editor.renderLineHighlight": "none",
+
+    // incate error with hightlight as wavy red underline
+    "problems.decorations.enabled": false,
+
+    // When set to true, control characters will be rendered as visible symbols (like ↵ for newlines or ⇥ for tabs),
+    "editor.renderControlCharacters": true,
+
+    // in right sidebar cursor(|) postion will shown as a line if setted false. not shown if setted true
+    "editor.hideCursorInOverviewRuler": false,
+
+
+    "editor.gotoLocation.multipleReferences": "goto",
+    "editor.gotoLocation.multipleDeclarations": "goto",
+    "editor.gotoLocation.multipleDefinitions": "goto",
+
+    // preview mode can be invoke by pressing Ctrl + p
+    // When set to true, files opened from Quick Open will be opened in preview mode. This means that opening a new file will replace the currently active preview tab
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+
+
+
+    "editor.gotoLocation.multipleImplementations": "goto",
+    "editor.gotoLocation.multipleTypeDefinitions": "goto",
+
+
+
+    // Custom CSS and JS Loader
+    // Here you can add custom style and script to modify VS Code further.
+    // VS code is actually web application it is build using HTML, CSS, JS so, it's essentially a web app
+
+    // Comment for Testing --- (*)
+
+    "vscode_custom_css.imports": [
+
+        // Goto help -> toggle developer tools. Open side by side.
+        // Click on cursor arrow button, Hover on element and it will highlight
+        // First we customize the (*) for trial
+
+        // Create a css file whereever you want in your computer. Where we identify and and define styles
+
+        // inspect the comment (*). It is span tag with class 'mtk5' and 'mtki'. Write css code
+        // add that file here, You must provide absolute path
+        "file://D:/Downloads/vs-code-Custom-Settings/custom-vscode.css",
+
+        // hit Ctrl+shift+p open command pallet -> enable custom css and js
+        // then vs code will show a restart window massage click on it
+
+        // then you can see comments are yellow
+
+        // So, that's how you can almost change all area of VS - code
+
+        // Let's modify more....
+        // then you again need to,
+        // hit Ctrl+shift+p open command pallet -> enable custom css and js and (click on restat vs code from vs code massge in notification section at bottom right corner)
+
+
+        // add JS file
+        "file://D:/Downloads/vs-code-Custom-Settings/custom-vscode.js"
+        // it will do things like blur background behind tthe command pallet after hitting ctrl+shift+p
+
+        // Change VS code Home screen icon
+        // to convert svg graphics -> css code
+        // paste that css code to custom-vscode.css
+
+        // close all tabs to see that image
+
+    ],
+    "workbench.tree.enableStickyScroll": false,
+    "editor.stickyScroll.scrollWithEditor": false,
+    "editor.wordWrap": "wordWrapColumn"
+    */
+
 }

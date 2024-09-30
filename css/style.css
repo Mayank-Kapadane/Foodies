@@ -8,6 +8,10 @@
     padding: 0;
 }
 
+body{
+    clear : both
+}
+
 :active,
 :hover,
 :focus{
@@ -37,7 +41,7 @@ a:hover {
     --third-color : #f98169;
     --white-color : #fff;
     --black-color : #000;
-    --text-color : #999;
+    --text-color : #424242;
 
     --primary-font : 'Roboto', "sans-serif";
     --secondry-font : 'Quicksand', "sans-serif";
@@ -70,6 +74,15 @@ when we need scrollbar inside div that time we use "class" or "id"
     width : 0.625rem;
 }
 
+/* background of scrollbar */
+::-webkit-scrollbar-track{
+     background : var(--white-color);
+}
+
+/* Scrollbar color */
+::-webkit-scrollbar-thumb{
+    background: var(--primary-color);
+}
 
 /* 
 ========================================
@@ -228,8 +241,8 @@ Each anchor tag have nav-link class */
     font-size : 0.9375rem;
     font-weight : 600;
     text-transform : capitalize;
-    color : var(--primary-font);
-    letter-sapcing : 1px;
+    color : var(--primary-color);
+    letter-spacing : 1px;
 }
 
 .navigation-wrap .main-btn{
@@ -247,6 +260,9 @@ Each anchor tag have nav-link class */
     left : 0;
     width : 100%;
     background : var(--white-color);
+    box-shadow:  0 0.125rem 21.75rem 0 rgba(0,0,0,0.09);
+/* if opacity is 0.9 then in navbar it shows more darker when scroll */
+
     transition: all .15s ease-in-out 0s;
 }
 
@@ -261,6 +277,37 @@ Each anchor tag have nav-link class */
     width : 100%;
     background : url("../images/bg/bg-1.jpg");
     background-size : cover;
-    padding : 16.875rem 0 9.375rem 0 ;
+    padding : 10.875rem 0 9.375rem 0 ;
 
+}
+
+/* 
+========================================
+        Counter Design
+========================================
+*/
+.counter-section{
+    background-color: var(--primary-color);
+    padding: 2.5rem 0;
+}
+
+
+.counter-section p{
+    color : var(--white-color);
+    text-transform : uppercase;
+}
+
+
+/* 
+========================================
+        About Section Design
+========================================
+*/
+.about-section{
+    background: var(--white-color);
+}
+
+.about-section .card,
+.about-section .card img{
+    
 }
