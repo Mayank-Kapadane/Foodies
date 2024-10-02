@@ -42,6 +42,7 @@ a:hover {
     --white-color : #fff;
     --black-color : #000;
     --text-color : #424242;
+    --text-gray : #808080;
 
     --primary-font : 'Roboto', "sans-serif";
     --secondry-font : 'Quicksand', "sans-serif";
@@ -374,4 +375,37 @@ Each anchor tag have nav-link class */
 
 .story-section h2{
     color : var(--primary-color);
+}
+
+
+/*
+========================================
+        Explore Food section Design
+========================================
+*/
+
+.explore-food .card{
+    border : none ;
+    background-color : transparent;
+    border-radius : 0.9375rem;
+
+}
+
+.explore-food .card img{
+    border-radius : 0.9375rem;
+    object-fit: cover;
+}
+
+.explore-food .card span{
+    display : block;
+    font-size : 1.5rem;
+    font-weight : 700;
+    color : var(--primary-color);
+    padding-bottom: 1rem;
+    border-bottom : 0.0625rem solid #eee;
+}
+
+
+.explore-food .card span del {
+    color : var(--text-gray);
 }
