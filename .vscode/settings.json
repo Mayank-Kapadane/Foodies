@@ -35,7 +35,7 @@
     // "editor.formatOnSave": true,
     "editor.tabSize": 4,
     "powermode.presets": "fireworks",
-
+/*
 
     // While copy/paste from vscode to word syntax highlight not shown
     "editor.copyWithSyntaxHighlighting": false,
@@ -188,7 +188,7 @@
     "editor.stickyScroll.scrollWithEditor": false,
     // "editor.wordWrap": "wordWrapColumn",
 
-
+*/
 
 
 }
