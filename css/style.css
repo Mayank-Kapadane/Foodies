@@ -1,61 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
-
-*,*:before,*:after{
+*,
+*:before,
+*:after {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body{
-    clear : both
+body {
+    clear: both;
 }
 
 :active,
 :hover,
-:focus{
+:focus {
     outline: 0 !important;
 }
 
 a,
 a:hover {
-    text-decoration : none !important;
+    text-decoration: none !important;
 }
 
 a:hover {
-    color : var(--primary-color) !important;
+    color: var(--primary-color) !important;
 }
 
-
 /* B.d. ul,ol have margin of 15 */
- ul,ol{
+ul,
+ol {
     margin: 0;
     padding: 0;
 }
 
+:root {
+    --primary-color: #ab2c48;
+    --secondry-color: #43121d;
+    --third-color: #f98169;
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #424242;
+    --text-gray: #808080;
 
-:root{
-    --primary-color: #AB2C48;
-    --secondry-color : #43121d;
-    --third-color : #f98169;
-    --white-color : #fff;
-    --black-color : #000;
-    --text-color : #424242;
-    --text-gray : #808080;
-
-    --primary-font : 'Roboto', "sans-serif";
-    --secondry-font : 'Quicksand', "sans-serif";
+    --primary-font: "Roboto", "sans-serif";
+    --secondry-font: "Quicksand", "sans-serif";
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     font-family: var(--primary-font);
-    font-size : 100%;
-    font-weight : 400;
+    font-size: 100%;
+    font-weight: 400;
 }
 
 /*
@@ -71,17 +71,17 @@ when we need scrollbar inside div that time we use "class" or "id"
 
 */
 
-::-webkit-scrollbar{
-    width : 0.625rem;
+::-webkit-scrollbar {
+    width: 0.625rem;
 }
 
 /* background of scrollbar */
-::-webkit-scrollbar-track{
-     background : var(--white-color);
+::-webkit-scrollbar-track {
+    background: var(--white-color);
 }
 
 /* Scrollbar color */
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     background: var(--primary-color);
 }
 
@@ -91,39 +91,37 @@ when we need scrollbar inside div that time we use "class" or "id"
 ========================================
 */
 
-
-#logo{
+#logo {
     width: 100px;
     height: 66px;
 }
 
-h1{
-    font-size : 3rem;
+h1 {
+    font-size: 3rem;
     font-weight: 900;
     margin-bottom: 3rem;
     color: var(--secondry-color);
 }
 
-h2{
-    font-size : 2.25rem;
+h2 {
+    font-size: 2.25rem;
     font-weight: 700;
     text-transform: capitalize;
     font-family: var(--secondry-font);
     color: var(--secondry-color);
-    line-height : 3rem;
+    line-height: 3rem;
 }
 
-h4{
+h4 {
     text-transform: capitalize;
     font-family: var(--secondry-font);
     color: var(--secondry-color);
-    font-size : 18px;
+    font-size: 18px;
     font-weight: 800;
-    margin-bottom:0.5rem;
+    margin-bottom: 0.5rem;
 }
 
-h5{
-
+h5 {
     text-transform: capitalize;
     font-family: var(--secondry-font);
     color: var(--secondry-color);
@@ -132,78 +130,73 @@ h5{
     line-height: 0.5rem;
 }
 
-p{
+p {
     color: var(--secondry-color);
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.75rem;
-    letter-spacing : 1px
+    letter-spacing: 1px;
 }
 
-.main-btn{
+.main-btn {
     display: inline-block;
-    padding:  0.625rem 1.875rem;
+    padding: 0.625rem 1.875rem;
     line-height: 1.5625rem;
     background-color: var(--primary-color);
-    border : 0.1875rem solid var(--primary-color);
+    border: 0.1875rem solid var(--primary-color);
     color: var(--white-color);
     font-size: 0.9375rem;
     font-weight: 600;
     text-transform: capitalize;
     box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
-    -webkit-transition: all .4s ease-out 0s;
-    -o-transition: all .4s ease-out 0s;
-    -moz-transition: all .4s ease-out 0s;
-    transition: all .4s ease-out 0s;
+    -webkit-transition: all 0.4s ease-out 0s;
+    -o-transition: all 0.4s ease-out 0s;
+    -moz-transition: all 0.4s ease-out 0s;
+    transition: all 0.4s ease-out 0s;
 }
 
-
-.white-btn{
-    padding : 0.625rem 1.875rem;
-    line-height : 25px;
+.white-btn {
+    padding: 0.625rem 1.875rem;
+    line-height: 25px;
     background-color: var(--white-color);
-    border : 0.1875rem solid var(--white-color);
-    color : var(--text-color);
-    font-size : 0.9375rem;
+    border: 0.1875rem solid var(--white-color);
+    color: var(--text-color);
+    font-size: 0.9375rem;
     font-weight: 600;
     text-transform: capitalize;
     box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
-    -webkit-transition : all .4s ease-out 0s;
-    -o-transition : all .4s ease-out 0s;
-    -moz-transition: all .4s ease-out 0s;
-    transition : all .4s ease-out 0s;
+    -webkit-transition: all 0.4s ease-out 0s;
+    -o-transition: all 0.4s ease-out 0s;
+    -moz-transition: all 0.4s ease-out 0s;
+    transition: all 0.4s ease-out 0s;
 }
-
 
 .main-btn:hover {
     background-color: transparent;
-    color : var(--primary-color);
+    color: var(--primary-color);
 }
 
-.white-btn:hover{
+.white-btn:hover {
     background-color: transparent;
-    color : var(--primary-color);
+    color: var(--primary-color);
     border-color: var(--primary-color);
 }
 
-.wrapper{
+.wrapper {
     padding-top: 0.25rem;
-    padding-bottom : 0.25rem;
+    padding-bottom: 0.25rem;
 }
 
-.text-content{
-    width : 70%;
-    margin : auto;
+.text-content {
+    width: 70%;
+    margin: auto;
 }
 
 .counter-section h2,
 .testimonial-section h2,
-.book-food-text h2{
-    color : var(--white-color);
+.book-food-text h2 {
+    color: var(--white-color);
 }
-
-
-
 
 /*
 ========================================
@@ -213,60 +206,55 @@ p{
 
 /* Change Navbar styling on scroll */
 
-.navigation-wrap{
-    position : fixed;
+.navigation-wrap {
+    position: fixed;
     width: 100%;
-    left:0;
-    z-index : 1000;
-    -webkit-transition : all 0.3s ease-out;
-    transition : all 0.3s ease-out
+    left: 0;
+    z-index: 1000;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
 }
 
-.navigation-wrap .nav-item{
+.navigation-wrap .nav-item {
     padding: 0 0.625rem;
     transition: all 200ms linear;
 }
 
-
 .navbar-toggler:focus {
     /* hamburger button */
     outline: unset;
-    border : unset;
+    border: unset;
     border: none;
-
 }
 
 /* Apply CSS on direcly the bootstrap class
 Each anchor tag have nav-link class */
-.nav-link{
-    font-size : 0.9375rem;
-    font-weight : 600;
-    text-transform : capitalize;
-    color : var(--primary-color);
-    letter-spacing : 1px;
+.nav-link {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    letter-spacing: 1px;
 }
 
-.navigation-wrap .main-btn{
-    padding :0.3125rem 1.4375rem;
-    box-shadow : none;
-    margin-left : 0.625rem;
-
+.navigation-wrap .main-btn {
+    padding: 0.3125rem 1.4375rem;
+    box-shadow: none;
+    margin-left: 0.625rem;
 }
-
 
 /*Change the navbar styling on scroll*/
-.navigation-wrap.scroll-on{
-    position : fixed;
-    top : 0;
-    left : 0;
-    width : 100%;
-    background : var(--white-color);
-    box-shadow:  0 0.125rem 21.75rem 0 rgba(0,0,0,0.2);
-/* if opacity is 0.9 then in navbar it shows more darker when scroll */
+.navigation-wrap.scroll-on {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--white-color);
+    box-shadow: 0 0.125rem 21.75rem 0 rgba(0, 0, 0, 0.2);
+    /* if opacity is 0.9 then in navbar it shows more darker when scroll */
 
-    transition: all .15s ease-in-out 0s;
+    transition: all 0.15s ease-in-out 0s;
 }
-
 
 /*
 ========================================
@@ -274,12 +262,11 @@ Each anchor tag have nav-link class */
 ========================================
 */
 
-.top-banner{
-    width : 100%;
-    background : url("../images/bg/bg-1.jpg");
-    background-size : cover;
-    padding : 10.875rem 0 9.375rem 0 ;
-
+.top-banner {
+    width: 100%;
+    background: url("../images/bg/bg-1.jpg");
+    background-size: cover;
+    padding: 10.875rem 0 9.375rem 0;
 }
 
 /*
@@ -287,17 +274,15 @@ Each anchor tag have nav-link class */
         Counter Design
 ========================================
 */
-.counter-section{
+.counter-section {
     background-color: var(--primary-color);
     padding: 2.5rem 0;
 }
 
-
-.counter-section p{
-    color : var(--white-color);
-    text-transform : uppercase;
+.counter-section p {
+    color: var(--white-color);
+    text-transform: uppercase;
 }
-
 
 /*
 ========================================
@@ -305,25 +290,22 @@ Each anchor tag have nav-link class */
 ========================================
 */
 #about {
-    scroll-margin-top : 90px;
+    scroll-margin-top: 90px;
 }
 
-.about-section{
+.about-section {
     background: var(--white-color);
 }
 
 .about-section .card,
-.about-section .card img{
+.about-section .card img {
     border-radius: 0.625rem;
     /* Give a curve to the image */
-
 }
 
-.about-section .text-sec{
+.about-section .text-sec {
     padding-left: 2rem;
-
 }
-
 
 /*
 ========================================
@@ -331,32 +313,31 @@ Each anchor tag have nav-link class */
 ========================================
 */
 
-.food-type ul li{
-    font-size : 1rem;
-    color : var(--text-color);
+.food-type ul li {
+    font-size: 1rem;
+    color: var(--text-color);
     line-height: 32px;
-    position : relative;
-    margin-left : 30px
+    position: relative;
+    margin-left: 30px;
 }
 
-.food-type ul li::before{
-    position : absolute;
-    left : -2.1875rem;
-    color : var(--primary-color);
-    font-size : 1.25rem;
+.food-type ul li::before {
+    position: absolute;
+    left: -2.1875rem;
+    color: var(--primary-color);
+    font-size: 1.25rem;
 
     /* Way to use font-awesome using css (Make sure about small and capital letters otherwise it'll not work properly ) */
-    font-family:  "Font Awesome 5 Free";
+    font-family: "Font Awesome 5 Free";
 
     /* icon */
     /* content value provided by font-awesome */
-    content : "\f00c";
+    content: "\f00c";
 
     display: inline-block;
-    padding-right: 3px ;
+    padding-right: 3px;
     vertical-align: middle;
     font-weight: 900;
-
 }
 
 /*
@@ -364,19 +345,18 @@ Each anchor tag have nav-link class */
         Story Section Design
 ========================================
 */
-.story-section{
-    width : 100%;
-    height : 28.125rem;
-    background : url("../images/bg/bg-2.jpg") no-repeat center;
+.story-section {
+    width: 100%;
+    height: 28.125rem;
+    background: url("../images/bg/bg-2.jpg") no-repeat center;
     background-size: cover;
     padding: 100px;
-    text-align : center
+    text-align: center;
 }
 
-.story-section h2{
-    color : var(--primary-color);
+.story-section h2 {
+    color: var(--primary-color);
 }
-
 
 /*
 ========================================
@@ -384,35 +364,32 @@ Each anchor tag have nav-link class */
 ========================================
 */
 
-#explore-food{
+#explore-food {
     scroll-margin-top: 100px;
 }
-.explore-food .card{
-    border : none ;
-    background-color : transparent;
-    border-radius : 0.9375rem;
-
+.explore-food .card {
+    border: none;
+    background-color: transparent;
+    border-radius: 0.9375rem;
 }
 
-.explore-food .card img{
-    border-radius : 0.9375rem;
+.explore-food .card img {
+    border-radius: 0.9375rem;
     object-fit: cover;
 }
 
-.explore-food .card span{
-    display : block;
-    font-size : 1.5rem;
-    font-weight : 700;
-    color : var(--primary-color);
+.explore-food .card span {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
     padding-bottom: 1rem;
-    border-bottom : 0.0625rem solid #eee;
+    border-bottom: 0.0625rem solid #eee;
 }
-
 
 .explore-food .card span del {
-    color : var(--text-gray);
+    color: var(--text-gray);
 }
-
 
 /*
 ========================================
@@ -420,55 +397,89 @@ Each anchor tag have nav-link class */
 ========================================
 */
 
-.testimonial-section{
-    background-color: var(--primary-color);
-    padding: 2rem 0 ;
-
+#testimonial {
+    scroll-margin-top: 90px;
 }
 
+.testimonial-section {
+    background-color: var(--primary-color);
+    padding: 1rem 0 3rem 0;
+}
 
 /* crousel item */
-.testimonial-section .carousel-item{
+.testimonial-section .carousel-item {
     /* margin-top :3rem; */
-    padding : 7rem 3.125rem;
-    background-color : var(--white-color);
+    padding: 7rem 3.125rem;
+    background-color: var(--white-color);
     border-radius: 0.9375rem;
-    text-align : center;
+    text-align: center;
 }
-.testimonial-section .carousel-caption{
+.testimonial-section .carousel-caption {
     padding: 0;
 }
-.testimonial-section .carousel-caption img{
-    max-width : 5rem;
-    border-radius : 50%;
-    padding : 0.3125rem;
-
+.testimonial-section .carousel-caption img {
+    max-width: 5rem;
+    border-radius: 50%;
+    padding: 0.3125rem;
 }
 
-.testimonial-section .carousel-item .carousel-caption p{
-    font-size : 1.3125rem;
-    line-height : 2.0625rem;
-    padding : 0 11% 0.625rem;
+.testimonial-section .carousel-item .carousel-caption p {
+    font-size: 1.3125rem;
+    line-height: 2.0625rem;
+    padding: 0 11% 0.625rem;
 }
 
 .testimonial-section .carousel-indicators {
     /* It's position is absolut. That you can see by inspecting carousel-indicator class in browser */
-    bottom : -2.8125rem;
-
+    bottom: -2.8125rem;
 }
 
-
-.testimonial-section .carousel-indicators button{
-    width : 15px;
-    height : 15px;
-    outline : none ;
-    border :none;
-    border-radius : 50%;
-    margin-right : 1rem;
-    opacity : 0.2;
+.testimonial-section .carousel-indicators button {
+    width: 15px;
+    height: 15px;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    margin-right: 1rem;
+    opacity: 0.2;
     background-color: var(--white-color);
 }
 
-.testimonial-section .carousel-indicators button.active{
+.testimonial-section .carousel-indicators button.active {
     opacity: 1;
+}
+
+/*
+========================================
+        FAQ section Design
+========================================
+*/
+
+#faq {
+    scroll-margin-top: 93px;
+}
+
+.faq h4 span {
+    color: var(--primary-color);
+    font-size: 1.875rem;
+    margin-right: 0.3125rem;
+}
+
+/*
+========================================
+       Book food section Design
+========================================
+*/
+
+.book-food {
+    width: 100%;
+    background: url("../images/bg/bg-3.jpg") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    /* Parallex effect */
+    background-attachment: fixed;
+    background-position: 0 71.9125px;
+    padding : 4.375rem 0;
 }
