@@ -2,19 +2,19 @@
 // when you scroll the navbar should have a white background
 let nav = document.querySelector(".navigation-wrap");
 
-// 'onscroll' event on window object(A Global object) 
+// 'onscroll' event on window object(A Global object)
 window.onscroll = () => {
     if(document.documentElement.scrollTop > 20){
         // 'documentElement' property get the reference of root node
-        // 'scrollTop' will scroll an element more than 20 
+        // 'scrollTop' will scroll an element more than 20
         nav.classList.add('scroll-on');
     }else{
         nav.classList.remove('scroll-on');
-        
+
     }
 
     // So that when you do not scroll only visit navbar looks like it is connected with hero content
-    // scroll after that shows line 
+    // scroll after that shows line
 }
 
 //  Anther solution of this active navbar problem is, This problem you can also solve by adding a class : "bg-light-subtle"
@@ -34,12 +34,12 @@ At mobile screen
 
 // Solution for problem 2 :
 
-let navbar = document.querySelectorAll(".nav-link"); 
+let navbar = document.querySelectorAll(".nav-link");
 // target all navitems
 
 
-let navCollase = document.querySelector(".navbar-collapse.collapse"); 
-// target 'collapse' class inside a 'navbar' class 
+let navCollase = document.querySelector(".navbar-collapse.collapse");
+// target 'collapse' class inside a 'navbar' class
 
 navbar.forEach(function (a){
     a.addEventListener("click", function (){
@@ -84,15 +84,10 @@ document.addEventListener("DOMContentLoaded",  ()=>{
 
 
     // duration in milisecond
-    counter("count1", 0, 1278, 10);
-    counter("count2", 10, 100, 100);
-    counter("count3", 0, 478, 30);
+    counter("count1", 0, 978, 1);
+    counter("count2", 10, 100, 4000);
+    counter("count3", 0, 478, 3500);
     counter("count4", 0, 1078, 20);
 
     // By default,  variables are assigned global scope and behave like "var".
 })
-
-
-
-
-

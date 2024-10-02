@@ -19,7 +19,12 @@
     "zenMode.fullScreen": false,
     // "editor.renderLineHighlight": "all",
     "zenMode.showTabs": "multiple",
-    "editor.lineNumbers": "on",
+
+
+    "editor.lineNumbers": "off",
+
+
+
     "workbench.editor.centeredLayoutAutoResize": true,
     "peacock.color": "",
     "peacock.keepBadgeColor": true,
@@ -31,7 +36,7 @@
     "editor.tabSize": 4,
     "powermode.presets": "fireworks",
 
-/*
+
     // While copy/paste from vscode to word syntax highlight not shown
     "editor.copyWithSyntaxHighlighting": false,
 
@@ -181,7 +186,9 @@
     ],
     "workbench.tree.enableStickyScroll": false,
     "editor.stickyScroll.scrollWithEditor": false,
-    "editor.wordWrap": "wordWrapColumn"
-    */
+    // "editor.wordWrap": "wordWrapColumn",
+
+
+
 
 }

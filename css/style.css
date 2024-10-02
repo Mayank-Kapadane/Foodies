@@ -32,7 +32,7 @@ a:hover {
  ul,ol{
     margin: 0;
     padding: 0;
-} 
+}
 
 
 :root{
@@ -57,7 +57,7 @@ body{
     font-weight : 400;
 }
 
-/* 
+/*
 ========================================
         Custom Scrollbar
 ========================================
@@ -84,7 +84,7 @@ when we need scrollbar inside div that time we use "class" or "id"
     background: var(--primary-color);
 }
 
-/* 
+/*
 ========================================
         Custom CSS
 ========================================
@@ -122,7 +122,7 @@ h4{
 }
 
 h5{
-    
+
     text-transform: capitalize;
     font-family: var(--secondry-font);
     color: var(--secondry-color);
@@ -204,7 +204,7 @@ p{
 
 
 
-/* 
+/*
 ========================================
         Header Design
 ========================================
@@ -267,7 +267,7 @@ Each anchor tag have nav-link class */
 }
 
 
-/* 
+/*
 ========================================
         Top banner Design
 ========================================
@@ -281,7 +281,7 @@ Each anchor tag have nav-link class */
 
 }
 
-/* 
+/*
 ========================================
         Counter Design
 ========================================
@@ -298,16 +298,80 @@ Each anchor tag have nav-link class */
 }
 
 
-/* 
+/*
 ========================================
         About Section Design
 ========================================
 */
+#about {
+    scroll-margin-top : 90px;
+}
+
 .about-section{
     background: var(--white-color);
 }
 
 .about-section .card,
 .about-section .card img{
-    
+    border-radius: 0.625rem;
+    /* Give a curve to the image */
+
+}
+
+.about-section .text-sec{
+    padding-left: 2rem;
+
+}
+
+
+/*
+========================================
+        Food type Section Design
+========================================
+*/
+
+.food-type ul li{
+    font-size : 1rem;
+    color : var(--text-color);
+    line-height: 32px;
+    position : relative;
+    margin-left : 30px
+}
+
+.food-type ul li::before{
+    position : absolute;
+    left : -2.1875rem;
+    color : var(--primary-color);
+    font-size : 1.25rem;
+
+    /* Way to use font-awesome using css (Make sure about small and capital letters otherwise it'll not work properly ) */
+    font-family:  "Font Awesome 5 Free";
+
+    /* icon */
+    /* content value provided by font-awesome */
+    content : "\f00c";
+
+    display: inline-block;
+    padding-right: 3px ;
+    vertical-align: middle;
+    font-weight: 900;
+
+}
+
+/*
+========================================
+        Story Section Design
+========================================
+*/
+.story-section{
+    width : 100%;
+    height : 28.125rem;
+    background : url("../images/bg/bg-2.jpg") no-repeat center;
+    background-size: cover;
+    padding: 100px;
+    text-align : center
+}
+
+.story-section h2{
+    color : var(--primary-color);
 }
