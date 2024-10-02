@@ -260,7 +260,7 @@ Each anchor tag have nav-link class */
     left : 0;
     width : 100%;
     background : var(--white-color);
-    box-shadow:  0 0.125rem 21.75rem 0 rgba(0,0,0,0.09);
+    box-shadow:  0 0.125rem 21.75rem 0 rgba(0,0,0,0.2);
 /* if opacity is 0.9 then in navbar it shows more darker when scroll */
 
     transition: all .15s ease-in-out 0s;

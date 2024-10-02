@@ -47,7 +47,7 @@
         font-size : 2rem;
         line-height : 2.0625rem
     }
-        
+
     /* Banner design */
     .top-banner{
         padding : 10.875rem 0 9.375rem;
@@ -57,8 +57,14 @@
         background-position: center center;
     }
 
+    .story-section{
+        height : auto;
+        padding : 3rem 0;
+        
+    }
+
 }
 
 @media (max-width : 330px){
-    
+
 }
