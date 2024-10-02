@@ -483,3 +483,35 @@ Each anchor tag have nav-link class */
     background-position: 0 71.9125px;
     padding : 4.375rem 0;
 }
+
+/*
+========================================
+        Form control section Design
+========================================
+*/
+.news-letter-form{
+    width : 55%;
+    margin: 0 auto;
+}
+
+.news-letter-form .form-control{
+    height : 3.225rem;
+    padding : 0 1.25rem;
+    font-size : 0.875rem;
+    font-weight : 400;
+    width : 100%;
+    border : none ;
+    border-radius : 0 ;
+    background: transparent;
+    border: 0.1875rem solid var(--text-gray);
+    color : var(--black-color);
+    font-weight: 700;
+}
+.news-letter-form .form-control:hover ,
+.news-letter-form .form-control:focus {
+    outline : none;
+    box-shadow : none ;
+    border-color : var(--primary-color);
+    
+
+}
